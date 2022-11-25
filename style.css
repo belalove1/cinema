@@ -1,38 +1,70 @@
-.table tbody tr td:not(:first-child) {
-    border: 1px solid blue;
-    width: 1em;
-    height:1em;
-    cursor: pointer;
-  }
-  
-  .table tbody tr td:first-child {
-    font-weight:bold;
-  }
-  
-  .table tr td:nth-child(5) {
-    border:none!important;
-  }
-  
-  .table {
-    border-spacing: 3em;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
- .booked {
-  background: red;
- }
 
- .active {
-  background-color: transparent;
- }
+* {
+  font-family: 'Coveat', cursive ;
+}
+body {
+  width: 100%;  
+  /* border: 2px solid black; */  
+}
 
- h1 {
-  border: 1px solid red;
+
+.ticket-table {
+  
   display: inline-block;
-  left: 0;
-  top: 0;
-  margin-left: 270px;
- }
+  margin-left: 80%;
+  margin-bottom: 5px;
+  border: 1px solid cornflowerblue;
+}
 
- .container {
-  width: 768px;
- }
+table thead th {
+  text-align: center;
+}
+
+.table tr td:nth-child(1) {
+  /* border: 1px solid black !important; */
+  text-align: left;  
+}
+
+.table tr td:nth-child(6) {
+  text-align: center;
+  border: none !important;
+  /* background-color: white !important; */
+}
+
+
+.table tbody tr td:not(:first-child) {
+  border: 1px solid blue;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  
+}
+
+.table tbody tr td:not(:first-child, :nth-child(6)):hover {
+  cursor: pointer;
+}
+
+ 
+
+.table tbody tr td:first-child {
+  width: 50px;
+}
+
+.table thead tr td {
+  text-align: center;
+}
+
+
+h1 {
+  text-align: center;
+  border: 1px solid red;
+  height: 120px;
+}
+
+.booked {
+  background-color: red !important;
+  color: white ;
+}
+
