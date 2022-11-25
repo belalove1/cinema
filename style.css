@@ -9,6 +9,19 @@ body {
   /* border: 2px solid black; */  
 }
 
+h1 {
+  text-align: center;
+  border: 1px solid red;
+  height: 120px;
+  letter-spacing: 50px;
+  padding-top: 30px;
+}
+
+
+.booked {
+  background-color: red !important;
+  color: white ;
+}
 
 .ticket-table {
   
@@ -57,14 +70,6 @@ table thead th {
 }
 
 
-h1 {
-  text-align: center;
-  border: 1px solid red;
-  height: 120px;
-}
 
-.booked {
-  background-color: red !important;
-  color: white ;
-}
+
 
