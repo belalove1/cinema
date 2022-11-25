@@ -1,0 +1,34 @@
+.table tbody tr td:not(:first-child) {
+    border: 1px solid blue;
+    width: 1em;
+    height:1em;
+    cursor: pointer;
+  }
+  
+  .table tbody tr td:first-child {
+    font-weight:bold;
+  }
+  
+  .table tr td:nth-child(5) {
+    border:none!important;
+  }
+  
+  .table {
+    border-spacing: 3em;
+  }
+
+ .booked {
+  background: red;
+ }
+
+ .active {
+  background-color: transparent;
+ }
+
+ h1 {
+  border: 1px solid red;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  margin-left: 270px;
+ }

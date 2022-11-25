@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>getElementById example</title>
+
+    <style>
+      table .c {
+        color: red;
+      }
+      .a.c {
+        color: green;
+      }
+    </style>
+
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#t tr").each(function () {
+            var item = $(this).find("td:first");
+
+            if (item.attr("class") == "c a") {
+              item.removeClass("c a").addClass("c");
+            } else {
+              item.addClass("c a");
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <table id="t">
+      <tr>
+        <td class="c">test</td>
+      </tr>
+    </table>
+
+    <button>change</button>
+  </body>
+</html>
